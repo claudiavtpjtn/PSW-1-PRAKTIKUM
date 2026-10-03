@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pendaftaran Kegiatan</title>
+</head>
+<body>
+  <main>
+    <h1>Pendaftaran Kegiatan</h1>
+    <p>Kolom bertanda wajib harus diisi.</p>
+   <form action="#" method="get">
+      <label for="nama">Nama lengkap (wajib)</label>
+      <input id="nama" name="nama" autocomplete="name" required>
+      <label for="email">Email (wajib)</label>
+      <input id="email" name="email" type="email"
+             autocomplete="email" required>
+      <label for="hp">Nomor HP (opsional)</label>         
+      <input id="hp" name="hp" type="tel" required autocomplete="tel">
+    <label for="tiket">Jumlah Tiket (wajib)</label>
+    <input id="tiket" name="tiket" type="number" min="1" max="5" step="1" required>
+<label for="prodi">Program studi (wajib)</label>
+      <select id="prodi" name="prodi" required>
+        <option value="">Pilih program studi</option>
+        <option value="trpl">D4 TRPL</option>
+        <option value="ti">D3 Teknologi Informasi</option>
+      </select>
+      <fieldset>git 
+        <legend>Mode kehadiran (wajib)</legend>
+        <input id="luring" name="mode" type="radio"
+               value="luring" required>
+        <label for="luring">Luring</label>
+        <input id="daring" name="mode" type="radio" value="daring">
+        <label for="daring">Daring</label>
+        </fieldset>
+        
+        <fieldset>
+        <legend>Minat Topik</legend>
+        <input id="topik_html" name="topik" type="checkbox" value="html">
+        <label for="topik_html">HTML</label>
+        <input id="topik_CSS" name="topik" type="checkbox" value="CSS">
+        <label for="topik_CSS">CSS</label>
+        </fieldset>
+
+      <fieldset>
+        <legend>Aksesibilitas</legend>
+        <input id="topik_aksesibilitas" name="topik" type="checkbox" value="aksesibilitas">
+        <label for="topik_aksesibilitas">Narrator</label>
+        <input id="topik_Magnifier" name="topik" type="checkbox" value="Magnifier ">
+        <label for="topik_Magnifier">Magnifier</label>
+      </fieldset>
+      
+      <label for="catatan">Catatan (opsional)</label>
+      <textarea id="catatan" name="catatan" rows="4"
+                maxlength="300"></textarea>
+      <button type="submit">Daftar</button>
+    </form>
+  </main>
+</body>

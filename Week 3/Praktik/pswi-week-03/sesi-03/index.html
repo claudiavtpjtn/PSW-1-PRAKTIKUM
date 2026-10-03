@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pendaftaran Kegiatan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+
+    <figure>
+      <img src="OT.png" alt="Open Theater berada di tepi dan langsung menghadap danau Toba" width="500px">
+      <figcaption>Lokasi kegiatan: Open Theater .</figcaption>
+    </figure>
+
+    <h1>Pendaftaran Kegiatan</h1>
+    <p>Kolom bertanda wajib harus diisi.</p>
+    <form action="#" method="get">
+      <label for="nama">Nama lengkap (wajib)</label>
+      <input id="nama" name="nama" autocomplete="name" required>
+      <label for="email">Email (wajib)</label>
+      <input id="email" name="email" type="email" autocomplete="email" required>
+      <label for="hp">Nomor HP (opsional)</label>
+      <input id="hp" name="hp" type="tel" required autocomplete="tel">
+      <label for="tiket">Jumlah Tiket ( 1-5 wajib)</label>
+      <input id="tiket" name="jumlah" type="number" min="1" max="5" step="1" required>
+
+      <label for="prodi">Program studi (wajib)</label>
+      <select id="prodi" name="prodi" required>
+        <option value="">Pilih program studi</option>
+        <option value="trpl">D4 TRPL</option>
+        <option value="ti">D3 Teknologi Informasi</option>
+      </select>
+      <label for="kode">Kode peserta (6 angka, wajib)</label>
+      <p id="kode-help">Contoh: 001234. Gunakan tepat enam angka.</p>
+      <input id="kode" name="kode" type="text" inputmode="numeric" pattern="[0-9]{6}" aria-describedby="kode-help"
+        required>
+      <fieldset>
+        <legend>Mode kehadiran (wajib)</legend>
+        <input id="luring" name="mode" type="radio" value="luring" required>
+        <label for="luring">Luring</label>
+        <input id="daring" name="mode" type="radio" value="daring">
+        <label for="daring">Daring</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Minat Topik</legend>
+        <input id="topik_html" name="topik" type="checkbox" value="html">
+        <label for="topik_html">HTML</label>
+        <input id="topik_CSS" name="topik" type="checkbox" value="CSS">
+        <label for="topik_CSS">CSS</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Aksesibilitas</legend>
+        <input id="topik_aksesibilitas" name="topik" type="checkbox" value="aksesibilitas">
+        <label for="topik_aksesibilitas">Narrator</label>
+        <input id="topik_Magnifier" name="topik" type="checkbox" value="Magnifier ">
+        <label for="topik_Magnifier">Magnifier</label>
+      </fieldset>
+
+      <label for="catatan">Catatan (opsional)</label>
+      <textarea id="catatan" name="catatan" rows="4" maxlength="300"></textarea>
+      <button type="submit">Daftar</button>
+    </form>
+  </main>
+</body>
