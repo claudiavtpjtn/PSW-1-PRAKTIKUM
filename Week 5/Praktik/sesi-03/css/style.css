@@ -1,0 +1,87 @@
+body {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #dbf5ff
+}
+
+header,
+main {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #f9a3f5;
+}
+
+button {
+    padding: .75rem 1rem;
+    color: white;
+    background: #f9a3f5;
+    border: 0;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    flex: 1 1 125px;
+    padding: 1rem;
+    border: 1px solid rgb(5, 35, 3);
+    border-radius: 20px;
+    background: #e7ffe7;
+    min-width: 0;
+
+}
+
+.card h2 {
+    overflow-wrap: anywhere;
+}
+
+.catalog {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+ 
+}
+
+.catalog {
+    grid-template-columns:
+        repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.card h2,
+.card p {
+    margin: 0;
+}
+
+.card a {
+    align-self: start;
+}
+
+/* urutan konten tetap ditentukan HTML */
+.card { padding: var(--space-2, 1rem); }
