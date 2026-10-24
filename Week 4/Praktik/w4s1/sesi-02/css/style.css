@@ -1,0 +1,47 @@
+body {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #222;
+    background: rgb(255, 210, 210);     
+}
+
+header, main{
+    padding: 1rem; margin-bottom: 1rem;
+    background: rgb(187, 255, 203); 
+    border: 1px solid #ddd; 
+    border-radius: 25px;
+}
+
+h1 { color: #3c00ff; }
+button { 
+    padding: .75rem 1rem; 
+    color: white; 
+    background: #f9a3f5; border: 0; 
+}
+
+form.card { 
+    padding: 1rem; 
+    background: white; 
+}
+
+.notice { 
+    color: #175cd3;
+ }
+
+.card p { 
+    color: rgb(252, 164, 255); 
+}
+
+.notice { 
+    color: rgb(255, 17, 0); 
+}
+
+.card { 
+    width: 240px; 
+    padding: 16px;
+    border: 2px solid #445; 
+    margin: 12px; 
+}

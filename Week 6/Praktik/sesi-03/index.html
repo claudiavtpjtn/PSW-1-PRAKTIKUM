@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Halaman Pertama Saya</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Selamat Datang di Situs Saya!</h1>
+        <p>Halaman Pertama Pengembangan Situs web I.</p>
+    </header>
+    <main>
+        <h2>Profil Singkat</h2>
+        <p>Nama saya Claudia Ve. Taketama. Panjaitan Saya sedang belajar web.</p>
+        <button type="button" id="greeting-button">Tampilkan salam</button>
+        <section>
+            <h2>Tujuan Belajar</h2>
+            <ul>
+                <li>Memahami cara kerja web</li>
+                <li>Membuat halaman HTML</li>
+                <li>Menggunakan Git</li>
+            </ul>
+        </section>
+        <nav aria-label="Navigasi utama">
+            <ul class="nav-list">
+                <li><a href="#kegiatan">Kegiatan</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </main>
+
+    <main id="kegiatan">
+        <h1>Kegiatan Mahasiswa</h1>
+        <div class="catalog">
+            <article class="card">
+                <img src="lokakarya-640.jpg" srcset="lokakarya-320.jpg 320w, lokakarya-640.jpg 640w"
+                    sizes="(min-width: 48rem) 50vw, 92vw"
+                     width="640" height="360" alt="Lokakarya">
+                <h2>Lokakarya HTML</h2>
+                <p>Belajar struktur.</p>
+            </article>
+            <article class="card">
+                <img src="rapat-640.jpg" srcset="rapat-320.jpg 320w, rapat-640.jpg 640w"
+                    sizes="(min-width: 48rem) 50vw, 92vw" width="640" height="360" alt="Diskusi">
+                <h2>Diskusi CSS</h2>
+                <p>Belajar tampilan.</p>
+            </article>
+            <article class="card">
+                <img src="uji-web-640.jpg" srcset="uji-web-320.jpg 320w, uji-web-640.jpg 640w"
+                    sizes="(min-width: 48rem) 50vw, 92vw" width="640" height="360" alt="Pengujian kualitas">
+                <h2>Audit Web</h2>
+                <p>Menguji kualitas.</p>
+            </article>
+            <article class="card">
+                <img src="ketik-panjang-640.jpg" srcset="ketik-panjang-320.jpg 320w, ketik-panjang-640.jpg  640w"
+                    sizes="(min-width: 48rem) 50vw, 92vw" width="640" height="360" alt="data panjang tanpa spasi">
+                <h2>iniadalahcontohpercobaandatapanjangtanpaspasi</h2>
+                <p>Percobaan data panjang</p>
+            </article>
+            <article class="card">
+                <img src="panjang-640.jpg" srcset="panjang-320.jpg 320w, panjang-640.jpg 640w"
+                    sizes="(min-width: 48rem) 50vw, 92vw" width="640" height="360" alt="data panjang dengan spasi">
+                <h2>ini adalah contoh percobaan data panjang dengan spasi</h2>
+                <p>Percobaan data panjang</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p id="kontak">Kontak: kegiatan@example.com</p>
+        <p>Dibuat untuk praktikum Pengembangan Situs Web I.</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

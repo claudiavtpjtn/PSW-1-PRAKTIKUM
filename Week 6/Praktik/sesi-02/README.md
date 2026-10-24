@@ -1,0 +1,29 @@
+LAPORAN PRAKTIKUM PENGEMBANGAN SITUS WEB 1
+NAMA: CLAUDIA V.T. PANJAITAN
+NIM: 41426004
+PRODI: D IV TRPL
+
+Kode sumber: Week6 sesi2
+
+CARA MENJALANKAN
+Untuk menjalankan website, buka folder proyek menggunakan Visual Studio Code, kemudian cari file index.html. Klik kanan pada file tersebut dan pilih Open with Live Server agar website terbuka melalui browser. Setelah halaman tampil, periksa apakah seluruh bagian website muncul dengan benar, termasuk navigasi, kartu informasi, kartu kegiatan, dan tombol Tampilkan salam. Jika tombol diklik, pesan seharusnya muncul sesuai dengan fungsi JavaScript yang telah dibuat. Apabila tampilan atau tombol tidak berfungsi, periksa kembali hubungan antara file HTML, CSS, dan JavaScript serta pastikan tidak ada kesalahan pada kode.
+
+BATASAN
+Data kegiatan pada halaman kegiatan.html masih ditulis secara langsung di dalam HTML sehingga perubahan informasi harus dilakukan dengan mengubah kode secara manual. Selain itu, tata letak kartu menggunakan CSS Grid sehingga tampilannya perlu diuji pada berbagai ukuran layar untuk memastikan susunannya tetap sesuai.
+
+CATATAN PERUBAHAN
+Perubahan yang saya kerjakan berfokus pada pengaturan tata letak website agar lebih sesuai dengan berbagai ukuran layar. Pada bagian kegiatan mahasiswa, saya menggunakan CSS Grid melalui class .catalog untuk menyusun kartu kegiatan. Properti grid-template-columns digunakan untuk mengatur jumlah kolom, sedangkan gap memberikan jarak antarkartu. Saya juga menggunakan minmax() dan auto-fit untuk membantu susunan kartu menyesuaikan ruang yang tersedia. Selain itu, media query @media (min-width: 48rem) digunakan untuk menerapkan susunan dua kolom ketika kondisi lebar layar memenuhi batas tersebut, css kode ini hanya berfungsi pada saat ukuran layout nya memenuhi minimal 48rem, jika kurang dari situ maka css kode ini tidak akan dibaca. Pada bagian navigasi, Flexbox dengan properti flex-wrap: wrap digunakan agar item navigasi dapat berpindah baris ketika ruang tidak mencukupi. Saya juga menambahkan pengaturan overflow-wrap: anywhere pada judul kartu agar teks panjang tanpa spasi memiliki kesempatan untuk berpindah baris. Pengujian teks panjang dilakukan untuk melihat pengaruh konten terhadap susunan halaman. Namun, beberapa aturan CSS .catalog dan .card masih ditulis berulang sehingga perlu dirapikan agar pengaturan tampilannya lebih mudah dipahami dan dipelihara.
+
+CATATAN BEFORE AFTER
+BEFORE
+Sebelum melakukan percobaan, saya memeriksa tampilan website untuk melihat bagaimana susunan kartu dan navigasi ditampilkan pada ukuran layar yang berbeda. Pada tahap ini, saya menggunakan beberapa ukuran viewport, yaitu 320px, 767px, 768px, 769px, dan 1200px. Saya juga mencoba menggunakan teks yang panjang untuk melihat bagaimana website menangani konten yang membutuhkan ruang lebih besar. Percobaan ini membantu saya memahami bahwa tampilan website dapat berubah sesuai dengan lebar layar dan aturan CSS yang digunakan. Saya juga memeriksa susunan kartu serta perilaku navigasi untuk melihat apakah keduanya tetap tertata dengan baik ketika ruang tampilan menjadi lebih sempit.
+
+AFTER
+Setelah melakukan percobaan, saya menggunakan CSS Grid untuk mengatur susunan kartu kegiatan dan media query untuk menyesuaikan jumlah kolom berdasarkan lebar layar. Saya juga menggunakan Flexbox pada bagian navigasi agar item navigasi dapat menyesuaikan ruang yang tersedia. Selain itu, saya menguji tampilan menggunakan teks panjang untuk melihat apakah konten tetap berada di dalam wadahnya. Saya memeriksa kembali tampilan website pada beberapa ukuran viewport untuk memahami perubahan tata letak ketika melewati breakpoint 768px. Dari percobaan ini, saya mempelajari bagaimana CSS Grid, Flexbox, dan media query bekerja bersama dalam membentuk tampilan website yang responsif. Hasil akhir tetap perlu disesuaikan dengan kondisi website yang benar-benar terlihat setelah perubahan kode diterapkan.
+
+CATATAN PENGUJIAN
+Pengujian dilakukan menggunakan beberapa ukuran viewport untuk mengamati perubahan tampilan website. Bukti screenshot yang tersedia di folder bukti/ mencakup ukuran 320px, 767px, 768px, 769px, dan 1200px, serta pengujian label panjang. Ukuran 320px digunakan untuk memeriksa tampilan pada layar kecil, sedangkan ukuran 767px, 768px, dan 769px digunakan untuk mengamati tampilan di sekitar breakpoint. Ukuran 1200px digunakan untuk melihat susunan halaman pada layar yang lebih lebar. Pengujian label panjang digunakan untuk memeriksa apakah teks tetap berada di dalam wadahnya. Selain itu, modul meminta pengujian zoom 200%, navigasi menggunakan keyboard, serta percobaan overflow yang disengaja menggunakan lebar 900px sebelum dilakukan perbaikan. Hasil dari setiap pengujian perlu dicatat berdasarkan kondisi yang benar-benar terlihat di browser. Screenshot yang tersedia menjadi bukti pengujian tampilan, tetapi keberhasilan setiap kondisi tetap harus dipastikan melalui pemeriksaan hasilnya.
+
+    AI Use Statement    
+    Alat: ChatGPT
+Saya menggunakan AI sebagai alat bantu dalam memahami konsep, istilah-istilah, dan fungsi kode yang digunakan selama pengerjaan praktikum, khususnya dalam penerapan CSS Grid, Flexbox, dan Media Query untuk mengatur tampilan website agar responsif terhadap berbagai ukuran layar. AI juga membantu memberikan penjelasan mengenai penggunaan breakpoint serta membantu menyusun dokumentasi praktikum agar lebih rapi, terstruktur, dan mudah dipahami. Melalui bantuan tersebut, saya dapat mempelajari tujuan dari setiap bagian kode dan memahami perubahan yang dilakukan selama percobaan. Meskipun demikian, setiap saran yang diberikan oleh AI tetap saya pelajari dan sesuaikan dengan kebutuhan praktikum. Kode dan hasil perubahan juga diperiksa serta diuji secara langsung menggunakan browser dan DevTools untuk melihat kesesuaian tampilan, mengidentifikasi kemungkinan kesalahan, dan memastikan bahwa hasil akhir sesuai dengan tujuan praktikum.

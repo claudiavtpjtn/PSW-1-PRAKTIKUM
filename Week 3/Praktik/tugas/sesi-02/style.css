@@ -1,0 +1,12 @@
+ body { background: #f4f6fa; }
+
+form.card { padding: 1rem; background: white; }
+
+.notice { color: #175cd3; }
+
+.card p { color: purple; }
+
+.notice { color: orange; }
+
+.card { width: 240px; padding: 16px;
+  border: 2px solid #445; margin: 12px; }

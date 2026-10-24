@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Halaman Beranda</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="assets/welcome.jpg" alt="Selamat Datang">
+        <h1>Selamat Datang di Situs Saya!</h1>
+        <nav aria-label="Navigasi utama">
+          <ul class="nav-list">
+      <li><a href="kegiatan.html">Kegiatan</a></li>
+      <li><a href="daftar.html" aria-current="page">Daftar</a></li>
+      </ul>
+        </nav>
+    </header>
+
+    <main id="kegiatan">
+        <h2>Kegiatan Mahasiswa</h2>
+        <div class="catalog">
+            <article class="card">
+                <img src="assets/lokakarya-640.jpg"
+                    srcset="assets/lokakarya-320.jpg 320w, assets/lokakarya-640.jpg 640w"
+                    sizes="(min-width: 48rem) 50vw, 92vw" width="640" height="360" alt="Lokakarya">
+                <h2>Lokakarya HTML</h2>
+                <p>Belajar struktur.</p>
+            </article>
+            <article class="card">
+                <img src="assets/rapat-640.jpg" srcset="assets/rapat-320.jpg 320w, assets/rapat-640.jpg 640w"
+                    sizes="(min-width: 48rem) 50vw, 92vw" width="640" height="360" alt="Diskusi">
+                <h2>Diskusi CSS</h2>
+                <p>Belajar tampilan.</p>
+            </article>
+            <article class="card">
+                <img src="assets/uji-web-640.jpg" srcset="assets/uji-web-320.jpg 320w, assets/uji-web-640.jpg 640w"
+                    sizes="(min-width: 48rem) 50vw, 92vw" width="640" height="360" alt="Pengujian kualitas">
+                <h2>Audit Web</h2>
+                <p>Menguji kualitas.</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p id="kontak">Kontak: kegiatan@example.com</p>
+        <p>Dibuat untuk praktikum Pengembangan Situs Web I.</p>
+    </footer>
+</body>
+
+</html>

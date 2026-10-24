@@ -1,0 +1,3 @@
+LAPORAN VALIDASI PERCOBAAN 
+ Dalam kegiatan praktikum ini percobaan yang saya lakukan yaitu menambahkan foto dan tabel dalam laman web saya, dalam proses validasi yang saya lakukan saya menemukan bahwa saya melakukan kesalahan penulisan ukuran fotonya. Saya menggunakan % yang seharusnya digunakan dalam file css, sementara dalam percobaan kali ini tidak menggunakan file css. Saya memperbaiki ukuran fotonya dari yang sebelumnya menggunakan kode % menjadi langsung menggunakan ukuran asli dari foto yang saya unggah, misalnya dari (width="20%" height="auto") menjadi (width="150" height="200") 
+ Dan percobaan berhasil menurut saya terjadi karena sudah mengikuti struktur dan membuat perintah yang benar

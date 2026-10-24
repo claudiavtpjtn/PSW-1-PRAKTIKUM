@@ -1,0 +1,6 @@
+Yang saya uji dalam praktikum kali ini yaitu melihat isi dalam DevTools, dari yang saya telusuri didalam DevTools terdapat elements yang berfungsi untuk memeriksa, mengedit dan mendebug struktur html dan gaya css dari laman web yang sedang dibuka, di DevTools kita juga dapt menemukan yang namanya console, console berfungsi sebagai pencatat error, peringatan, atau informasi yang terdapat pada laman web yang sedang dibuka.
+Dalam praktikum ini saya juuga mencoba untuk membuat sebuah error, error yang saya buat yaitu berupa kesalahan penulisan dalam perintah <html lang="id">, saya dengan sengaja menambahkan huruf "g" dalam lang menjadi langg yang membuat sistem tidak dapat membaca kode dari program itu. Saya menggunakan web validator untuk menguji error yang saya buat, dari web validator tersebut saya mendapatkan peringatan dan informasi dimana letak error yang terjadi dan dapat segera memperbaikinya. 
+Hasil pengujian yang saya lakukan
+1. Halaman html berhasil dibuka melalui web browser
+2. DevTools dapat digunakan untuk melihat dan memeriksa elements html
+3. Membuat sebuah error dan memperbaikinya
