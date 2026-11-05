@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --brand: #175cd3;
+    --space: 1rem;
+    --surface: white;
+    --ink: #243244;
+    --kotak-kecil: rgb(255, 244, 164);
+}
+
+body {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: var(--space);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--ink);
+    background: #dbf5ff;
+}
+
+header,
+main {
+    margin-bottom: var(--space);
+    padding: var(--space);
+    background: var(--surface);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #f9a3f5;
+    font-size: clamp(1.75rem, 1.2rem + 2vw, 3rem);
+    font-style: italic;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 1rem;
+    justify-content: center;
+ 
+}
+
+
+.nav-list a {
+    display: inline-block;
+    padding: 9px 18px;
+    list-style: none;
+    text-decoration: none;
+    font-weight: bold;
+    border:2px solid #f9a3f5;
+    border-radius: 25px;
+    background-color: var(--kotak-kecil) ;
+    
+}
+
+button {
+    padding: 0.75rem 1rem;
+    color: white;
+    background: #f9a3f5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+input,
+select,
+textarea {
+    max-width: 100%;
+}
+
+.catalog {
+    display: grid;
+    gap: var(--space);
+    grid-template-columns:
+        repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+    container-type: inline-size;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 0;
+    padding: 1rem;
+    border: 1px solid rgb(5, 35, 3);
+    border-radius: 20px;
+    background: #e6fef1;
+}
+
+.card:hover {
+   color: rgb(4, 4, 107);
+   background-color: #daeeff;
+}
+
+
+.card h2 {
+    overflow-wrap: anywhere;
+}
+
+.card h2,
+.card p {
+    margin: 0;
+}
+
+.card a {
+    align-self: flex-start;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+@container (min-width: 30rem) {
+    .card {
+        padding: 1.5rem;
+    }
+}
+
+@media (min-width: 48rem) {
+    .catalog {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card {
+        transition: none;
+    }
+}
